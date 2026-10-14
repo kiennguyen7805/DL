@@ -1,0 +1,52 @@
+\section{Biểu diễn hộp và hồi quy vị trí}
+Một hộp có thể biểu diễn bằng hai góc $(x_1,y_1,x_2,y_2)$ theo pixel hoặc bằng tâm, chiều rộng và chiều cao $(x_c,y_c,w,h)$. Nhãn YOLO của ROD chuẩn hóa bốn giá trị sau theo kích thước ảnh. Khi đánh giá, hệ thống chuyển về pixel để tính giao và hợp. Quá trình chuyển phải clip sai số số thực rất nhỏ ở biên nhưng không được chấp nhận hộp rỗng hoặc class ngoài 0--24.
+
+IoU không phản ánh khoảng cách tuyệt đối giữa hai hộp. Với vật nhỏ, lệch vài pixel có thể làm IoU giảm mạnh; với vật lớn, cùng độ lệch có ảnh hưởng nhỏ hơn. Do đó mAP50 đánh giá dễ hơn mAP50--95. Khoảng cách giữa hai chỉ số giúp quan sát chất lượng định vị: model có thể tìm đúng vật thể ở IoU 0,5 nhưng hộp chưa đủ sát để giữ AP ở 0,75--0,95.
+
+Ví dụ một GT có diện tích 10.000 pixel vuông và hộp dự đoán giao 8.000, phần ngoài giao của hai hộp tổng 4.000, khi đó hợp là 12.000 và IoU bằng 0,667. Prediction được tính đúng ở IoU 0,5 nhưng sai ở 0,7. mAP50--95 vì thế khắt khe hơn và được dùng làm tiêu chí best của các pipeline huấn luyện.
+
+\section{Đường Precision--Recall và AP}
+Khi hạ confidence threshold, model thường giữ thêm prediction: Recall tăng nhưng FP cũng có thể tăng, làm Precision giảm. Đường Precision--Recall mô tả toàn bộ đánh đổi này. Một điểm vận hành duy nhất phù hợp cho giao diện, còn AP tóm tắt thứ hạng prediction qua nhiều score. Vì thế AP không phụ thuộc đúng một threshold hiển thị, nhưng vẫn phụ thuộc prediction thu thập, NMS và giới hạn detection.
+
+Nội suy 101 điểm lấy Precision cực đại ở Recall không thấp hơn mỗi mức $0,00;0,01;\ldots;1,00$. Phép nội suy tránh phạt các dao động cục bộ của đường cong và tạo kết quả tái lập. Nếu một lớp không có GT, cách xử lý phải được quy định; ROD Final có đủ 25 lớp trong toàn bộ dữ liệu và evaluator lưu số GT từng lớp để kiểm tra.
+
+Micro Precision cộng TP, FP, FN của mọi lớp trước khi chia. Macro theo lớp sẽ tính từng lớp rồi trung bình. Dự án dùng micro F2 chọn threshold vì muốn tối ưu số detection tổng thể, còn mAP trung bình đều qua lớp để không bỏ qua lớp hiếm. Hai phép tổng hợp có thể cho thứ hạng khác nhau mà không mâu thuẫn.
+
+\section{Đặc điểm quy mô YOLO11n và YOLO11s}
+Ký hiệu n và s thể hiện hai mức quy mô trong cùng họ YOLO11. Checkpoint local sau khi thay head ROD có khoảng 2,595 triệu tham số ở E3 và 9,437 triệu ở E4. Số tham số E4 gấp khoảng 3,64 lần E3; phép đo công cụ ở ảnh 640 cho 6,53 và 21,72 GFLOPs theo quy ước của Ultralytics/THOP. Các số GFLOPs chỉ so tương đối trong cùng công cụ vì operator và quy ước đếm có thể khác.
+
+Mô hình lớn hơn có thể giữ nhiều kênh đặc trưng và học ranh giới lớp phức tạp hơn. Đổi lại, activation và phép tích chập tăng, làm latency và bộ nhớ cao hơn. Lợi ích không đồng đều theo lớp: E4 tốt hơn E3 ở nhiều lớp nhưng giảm ở Building, Electrical Pole, Motorcycle, Tree, Guard rail và Bicycle Rack trong bảng AP50--95. Một phần chênh lệch nhỏ có thể do biến thiên huấn luyện một seed.
+
+YOLO xử lý toàn ảnh trong một mạng feed-forward và dùng đầu dự đoán dày đặc. Điều này phù hợp khi cần latency thấp. Tuy nhiên, “one-stage” không có nghĩa chỉ một layer, và “real-time” không phải thuộc tính cố định. Tốc độ phụ thuộc ảnh, thiết bị, backend, precision, batch, hậu xử lý và toàn bộ ứng dụng. Báo cáo chỉ gọi E3/E4 nhanh hơn E6 trên CPU đã đo, không khẳng định chuẩn thời gian thực phổ quát.
+
+\section{ResNet-50 và kết nối tắt}
+Khi mạng sâu, gradient có thể khó truyền qua nhiều lớp. Residual block học phần dư $F(x)$ rồi cộng đầu vào: $y=F(x)+x$. Đường tắt tạo lối truyền tín hiệu và cho phép block tập trung vào phần thay đổi cần học. ResNet-50 dùng các bottleneck block và tạo nhiều tầng đặc trưng có độ phân giải giảm dần.
+
+Đặc trưng tầng sớm có độ phân giải cao, hữu ích cho biên và vật nhỏ nhưng ít ngữ nghĩa; tầng sâu có ngữ nghĩa mạnh nhưng không gian thô. Nếu chỉ dùng tầng cuối, detector có thể khó định vị vật nhỏ. FPN kết hợp các tầng này để tạo feature map nhiều mức với thông tin ngữ nghĩa mạnh hơn ở mọi tỉ lệ.
+
+\section{Feature Pyramid Network}
+FPN có nhánh bottom-up từ backbone, nhánh top-down phóng lớn đặc trưng sâu và lateral connection trộn với đặc trưng cùng kích thước. Kết quả là tập mức pyramid; RPN và ROI head có thể chọn mức phù hợp kích thước vùng. Đối với ROD, người ở xa, biển báo nhỏ và tòa nhà lớn xuất hiện cùng ảnh, nên biểu diễn đa tỉ lệ có lý do kiến trúc rõ ràng.
+
+FPN không bảo đảm tự động tốt hơn YOLO. YOLO cũng có cơ chế tổng hợp đa tỉ lệ trong neck. Khác biệt thực nghiệm còn bao gồm backbone, head, loss, augmentation, input transform và scheduler. Tài liệu FPN giải thích cơ chế, còn kết luận trên ROD phải dựa vào ba checkpoint thực tế.
+
+\section{Region Proposal Network và ROI head}
+RPN trượt trên feature map để dự đoán objectness và hiệu chỉnh anchor/proposal. Sau lọc, ROI Align lấy đặc trưng có kích thước cố định từ vùng đề xuất. ROI head phân loại proposal và tinh chỉnh hộp lần nữa. Cách chia hai giai đoạn tập trung tài nguyên vào vùng có khả năng chứa vật thể, nhưng số proposal và xử lý theo vùng làm pipeline nặng hơn.
+
+Trong E6, predictor cuối có 26 lớp gồm background. Khi suy luận, score và label từ Torchvision phải lọc label 0, sau đó trừ một trước khi so với ROD. Nếu quên bước này, mọi tên lớp lệch một vị trí dù hộp đúng. Unit test mapping vì thế quan trọng ngang với test load checkpoint.
+
+RPN và ROI head còn có NMS và số proposal riêng. Benchmark E6 bao gồm tiền xử lý, forward và hậu xử lý theo adapter. Trace FLOPs của mô hình detection có thể bỏ sót ROI/NMS hoặc nhánh điều khiển, nên báo cáo không so trực tiếp ước tính 452 GFLOPs của E6 với GFLOPs YOLO như một đại lượng chính xác tuyệt đối.
+
+\section{Augmentation và khả năng tổng quát}
+Augmentation mô phỏng biến thiên không làm đổi nhãn: màu sắc, dịch chuyển, scale và lật ngang. Mosaic giúp mỗi ảnh đầu vào chứa nội dung từ nhiều ảnh nguồn, tăng ngữ cảnh và số object quan sát trong một batch. Lật dọc tắt vì cảnh đường phố lật ngược không thực tế; rotation và shear bằng 0 trong cấu hình hiện tại.
+
+Augmentation quá mạnh có thể tạo cảnh không tự nhiên hoặc hộp rất nhỏ, còn quá yếu dễ overfit. Dự án không chạy ablation augmentation, nên không quy kết chênh lệch E3/E4 cho một phép biến đổi cụ thể. E6 code không có augmentation hình học tùy chỉnh ngoài transform chuẩn; đây là khác biệt giữa pipeline và là biến gây nhiễu khi so kiến trúc.
+
+\section{Ý nghĩa của học chuyển giao COCO}
+COCO chứa nhiều lớp phổ biến trùng khái niệm với ROD như person, car, bus, truck và dog. Trọng số pretrained có thể cung cấp cạnh, texture, hình dạng và biểu diễn đối tượng trước khi fine-tune. Các lớp đặc thù hơn như manhole, guard rail hay electrical box cần thích nghi từ dữ liệu ROD.
+
+Pretraining không thay thế đánh giá domain shift. Ảnh ROD có góc chụp, độ phân giải, phân bố lớp và điều kiện cảnh riêng. Ba mô hình đều pretrained nên đồ án không trả lời câu hỏi pretrained so với scratch. E5 scratch thuộc lịch sử và đã ra khỏi phạm vi; đưa E5 không hoàn chỉnh vào bảng sẽ làm sai thiết kế nghiên cứu hiện hành.
+
+\section{Từ detector đến hệ hỗ trợ di chuyển}
+Detector là một thành phần nhận thức, chưa phải hệ điều hướng. Hệ hỗ trợ cần ước lượng khoảng cách hoặc mức nguy cơ, theo dõi vật qua frame, hợp nhất thông tin theo thời gian, chọn cảnh báo và truyền đạt bằng âm thanh/rung. Mỗi bước tạo thêm lỗi và độ trễ. Vì thế Recall detector cao không trực tiếp chuyển thành tỷ lệ tránh va chạm.
+
+Với ảnh tĩnh, giao diện hữu ích cho minh họa cách model nhận cảnh và so checkpoint. Để chuyển sang thiết bị hỗ trợ, yêu cầu phải được xác định cùng người dùng khiếm thị: loại vật cản nào cần cảnh báo, khoảng cách nào có ý nghĩa, tần suất thông báo chấp nhận được và cách xử lý khi model không chắc chắn. Những câu hỏi đó nằm ngoài dữ liệu ROD và cần nghiên cứu riêng.

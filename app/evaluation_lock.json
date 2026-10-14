@@ -1,0 +1,44 @@
+{
+  "data_yaml_sha256": "84a776e32c59063930b3e036d91876921163f48de70a9e85eb8c2b3cc2ddcf52",
+  "confidence_config_sha256": "6900013b78a3eb2cb66e865d4d8868ad98a2d3e497b49aacd29d0bc3faf1272f",
+  "checkpoints": {
+    "E3": "41f7943cbab67d1d5920e2852068b1e98d22eda8023f978abcb608a65a2aed02",
+    "E4": "dc09c71052027e9083f014b99144edb65bcdc2ed032ab3591fce0db52b26e2f5",
+    "E6": "ce459c56afc57efec80c63ab213bab60ecb9a966c78a1396051de6524783f9bd"
+  },
+  "thresholds": {
+    "E3": 0.22,
+    "E4": 0.19,
+    "E6": 0.59
+  },
+  "protocol": {
+    "evaluation_split_order": [
+      "valid",
+      "test"
+    ],
+    "collection_conf": 0.01,
+    "nms_iou": 0.7,
+    "collection_max_det": 300,
+    "evaluation_max_det": 100,
+    "operating_max_det": 300,
+    "iou_thresholds": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "ap_recall_points": 101,
+    "operating_match_iou": 0.5,
+    "class_mapping": "E3/E4 0..24; E6 1..25 -> ROD 0..24",
+    "gt": "ROD Final A4 YOLO xywh converted to pixel xyxy",
+    "area": "all",
+    "crowd_ignore": false,
+    "ap_scope": "predictions with model score >= 0.01; not the official COCO scorer"
+  }
+}

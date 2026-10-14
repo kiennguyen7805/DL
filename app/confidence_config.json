@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "selection_rule": "Micro F2 trên VALID, IoU 0.50, khớp class và ghép một-một; hòa điểm chọn ngưỡng cao hơn",
+  "E3": {
+    "mode": "auto",
+    "threshold": 0.22,
+    "fallback_threshold": 0.05,
+    "calibrated": true,
+    "checkpoint_sha256": "41f7943cbab67d1d5920e2852068b1e98d22eda8023f978abcb608a65a2aed02",
+    "source": "ROD_FINAL_VALID",
+    "metrics": {
+      "precision": 0.6455358543856896,
+      "recall": 0.7733082706766917,
+      "f2": 0.7438614255234514,
+      "tp": 4114,
+      "fp": 2259,
+      "fn": 1206,
+      "match_iou": 0.5,
+      "valid_images": 3318
+    },
+    "evidence": "results/E3_YOLO11n/confidence/E3_threshold_sweep.csv",
+    "prediction_sha256": "1f24b53c9565a847c2ed5da33a5cf7f34342a14977646886be847a9ac5f6e3c5",
+    "threshold_sweep_sha256": "0896f2ea9e042399713b818bcb0b942faf9b36394f0cd20ad19dfe25626e9451",
+    "data_yaml_sha256": "84a776e32c59063930b3e036d91876921163f48de70a9e85eb8c2b3cc2ddcf52"
+  },
+  "E4": {
+    "mode": "auto",
+    "threshold": 0.19,
+    "fallback_threshold": 0.05,
+    "calibrated": true,
+    "checkpoint_sha256": "dc09c71052027e9083f014b99144edb65bcdc2ed032ab3591fce0db52b26e2f5",
+    "source": "ROD_FINAL_VALID",
+    "metrics": {
+      "precision": 0.6502194642046315,
+      "recall": 0.8075187969924812,
+      "f2": 0.7702513716068419,
+      "tp": 4296,
+      "fp": 2311,
+      "fn": 1024,
+      "match_iou": 0.5,
+      "valid_images": 3318
+    },
+    "evidence": "results/E4_YOLO11s/confidence/E4_threshold_sweep.csv",
+    "prediction_sha256": "5a066de39a75202b3429fd4d1ddf7ce7582e9bb45c55fe1291521f1a39594fa6",
+    "threshold_sweep_sha256": "e470a3f45b1742e6c8e3636baafac75156572bca29fbe20d746a778b9f72a460",
+    "data_yaml_sha256": "84a776e32c59063930b3e036d91876921163f48de70a9e85eb8c2b3cc2ddcf52"
+  },
+  "E6": {
+    "mode": "auto",
+    "threshold": 0.59,
+    "fallback_threshold": 0.05,
+    "calibrated": true,
+    "checkpoint_sha256": "ce459c56afc57efec80c63ab213bab60ecb9a966c78a1396051de6524783f9bd",
+    "source": "ROD_FINAL_VALID",
+    "metrics": {
+      "precision": 0.748252911813644,
+      "recall": 0.8453007518796992,
+      "f2": 0.8239281788200806,
+      "tp": 4497,
+      "fp": 1513,
+      "fn": 823,
+      "match_iou": 0.5,
+      "valid_images": 3318
+    },
+    "evidence": "results/E6_Faster_RCNN/confidence/E6_threshold_sweep.csv",
+    "note": "Chỉ dùng kiểm thử giao diện; phải hiệu chuẩn trên toàn bộ VALID trước đánh giá cuối.",
+    "prediction_sha256": "043e3c4db23a39a0420f39dfd9f1e09fe2d10d07f6c3fef1e736d0b402b74816",
+    "threshold_sweep_sha256": "e26a29fe14f4f348dcd8e21133106a2c731fdf45750ccbad7348a727a34ebef2",
+    "data_yaml_sha256": "84a776e32c59063930b3e036d91876921163f48de70a9e85eb8c2b3cc2ddcf52"
+  }
+}

@@ -1,0 +1,1 @@
+"""ROD image detection application."""

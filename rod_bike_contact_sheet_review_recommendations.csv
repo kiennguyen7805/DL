@@ -1,0 +1,225 @@
+﻿id,sheet_group,contact_sheet,assistant_recommendation,current_class,proposed_class,reason_from_contact_sheet,final_user_decision,dataset_changed
+R007,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R009,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R015,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R016,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Xe có động cơ, gồm kiểu xe ba bánh/xe tay ga; class Motorcycle phù hợp nếu quy tắc ROD bao gồm xe máy ba bánh.",,NO
+R017,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R018,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R019,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R024,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R034,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R037,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R040,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Xe có động cơ, gồm kiểu xe ba bánh/xe tay ga; class Motorcycle phù hợp nếu quy tắc ROD bao gồm xe máy ba bánh.",,NO
+R043,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R047,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R051,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Xe có động cơ, gồm kiểu xe ba bánh/xe tay ga; class Motorcycle phù hợp nếu quy tắc ROD bao gồm xe máy ba bánh.",,NO
+R055,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R082,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R084,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R085,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R087,MOTORCYCLE,motorcycle_01.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R089,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R090,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R091,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R092,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R093,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R094,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R095,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R096,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R097,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R098,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R099,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R100,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R101,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R102,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R103,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R104,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R105,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R106,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R107,MOTORCYCLE,motorcycle_02.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R108,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R109,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R110,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R111,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R112,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R113,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R114,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R115,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R116,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R117,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R118,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R119,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R120,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R121,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R122,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R123,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R124,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R125,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R126,MOTORCYCLE,motorcycle_03.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R127,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R128,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R129,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R130,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R131,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R132,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R133,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R134,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R135,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R136,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R137,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R138,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R139,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R142,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R143,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R144,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R145,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R146,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R147,MOTORCYCLE,motorcycle_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R148,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R149,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R150,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R151,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R152,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R153,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R155,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R156,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R157,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R160,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R163,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R164,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R165,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R166,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R167,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R169,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R170,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R171,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R172,MOTORCYCLE,motorcycle_05.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R174,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R175,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R176,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R177,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R178,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R179,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R180,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R182,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R185,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Xe có động cơ, gồm kiểu xe ba bánh/xe tay ga; class Motorcycle phù hợp nếu quy tắc ROD bao gồm xe máy ba bánh.",,NO
+R190,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R204,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R270,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R275,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R290,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R294,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R302,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Xe có động cơ, gồm kiểu xe ba bánh/xe tay ga; class Motorcycle phù hợp nếu quy tắc ROD bao gồm xe máy ba bánh.",,NO
+R307,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R317,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Xe có động cơ, gồm kiểu xe ba bánh/xe tay ga; class Motorcycle phù hợp nếu quy tắc ROD bao gồm xe máy ba bánh.",,NO
+R320,MOTORCYCLE,motorcycle_06.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Xe có động cơ, gồm kiểu xe ba bánh/xe tay ga; class Motorcycle phù hợp nếu quy tắc ROD bao gồm xe máy ba bánh.",,NO
+R321,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R323,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R324,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R325,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R328,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R338,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R339,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R340,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R341,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R342,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R343,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R344,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R345,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R346,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R347,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R348,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R349,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R350,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R351,MOTORCYCLE,motorcycle_07.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R352,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R353,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R354,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R355,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R356,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R357,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R362,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R363,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R364,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R365,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R366,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R367,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R369,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R370,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R376,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R382,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Xe có động cơ, gồm kiểu xe ba bánh/xe tay ga; class Motorcycle phù hợp nếu quy tắc ROD bao gồm xe máy ba bánh.",,NO
+R410,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Xe có động cơ, gồm kiểu xe ba bánh/xe tay ga; class Motorcycle phù hợp nếu quy tắc ROD bao gồm xe máy ba bánh.",,NO
+R411,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Xe có động cơ, gồm kiểu xe ba bánh/xe tay ga; class Motorcycle phù hợp nếu quy tắc ROD bao gồm xe máy ba bánh.",,NO
+R412,MOTORCYCLE,motorcycle_08.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),"Hình thái mô tô/xe tay ga/xe điện dạng moped, không thấy bàn đạp; cần duyệt trước khi đổi Bike (0) sang Motorcycle (8).",,NO
+R010,UNCLEAR,unclear_01.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R020,UNCLEAR,unclear_01.jpg,FIX_BBOX_AND_CLASS,Bike (0),Motorcycle (8),Các bbox hiện tại chia một xe máy thành phần trước/sau hoặc chỉ khoanh bánh; cần gộp/chỉnh bbox và đặt Motorcycle.,,NO
+R021,UNCLEAR,unclear_01.jpg,FIX_BBOX_AND_CLASS,Bike (0),Motorcycle (8),Các bbox hiện tại chia một xe máy thành phần trước/sau hoặc chỉ khoanh bánh; cần gộp/chỉnh bbox và đặt Motorcycle.,,NO
+R026,UNCLEAR,unclear_01.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R027,UNCLEAR,unclear_01.jpg,FIX_BBOX_AND_CLASS,Bike (0),Motorcycle (8),Các bbox hiện tại chia một xe máy thành phần trước/sau hoặc chỉ khoanh bánh; cần gộp/chỉnh bbox và đặt Motorcycle.,,NO
+R028,UNCLEAR,unclear_01.jpg,FIX_BBOX_AND_CLASS,Bike (0),Motorcycle (8),Các bbox hiện tại chia một xe máy thành phần trước/sau hoặc chỉ khoanh bánh; cần gộp/chỉnh bbox và đặt Motorcycle.,,NO
+R032,UNCLEAR,unclear_01.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R044,UNCLEAR,unclear_01.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R050,UNCLEAR,unclear_01.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R053,UNCLEAR,unclear_01.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R086,UNCLEAR,unclear_01.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R088,UNCLEAR,unclear_01.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R140,UNCLEAR,unclear_01.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R154,UNCLEAR,unclear_01.jpg,REMOVE_OR_REANNOTATE_MIRROR_BBOX,Bike (0),,BBox Bike chỉ bao gương/chi tiết nhỏ của xe máy; không được chỉ đổi class sang Motorcycle.,,NO
+R158,UNCLEAR,unclear_01.jpg,REMOVE_OR_REANNOTATE_MIRROR_BBOX,Bike (0),,BBox Bike chỉ bao gương/chi tiết nhỏ của xe máy; không được chỉ đổi class sang Motorcycle.,,NO
+R159,UNCLEAR,unclear_01.jpg,REMOVE_OR_REANNOTATE_MIRROR_BBOX,Bike (0),,BBox Bike chỉ bao gương/chi tiết nhỏ của xe máy; không được chỉ đổi class sang Motorcycle.,,NO
+R161,UNCLEAR,unclear_01.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R162,UNCLEAR,unclear_01.jpg,REMOVE_OR_REANNOTATE_MIRROR_BBOX,Bike (0),,BBox Bike chỉ bao gương/chi tiết nhỏ của xe máy; không được chỉ đổi class sang Motorcycle.,,NO
+R168,UNCLEAR,unclear_02.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R173,UNCLEAR,unclear_02.jpg,REMOVE_OR_REANNOTATE_MIRROR_BBOX,Bike (0),,BBox Bike chỉ bao gương/chi tiết nhỏ của xe máy; không được chỉ đổi class sang Motorcycle.,,NO
+R193,UNCLEAR,unclear_02.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R195,UNCLEAR,unclear_02.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R198,UNCLEAR,unclear_02.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R203,UNCLEAR,unclear_02.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R205,UNCLEAR,unclear_02.jpg,FIX_BBOX_AND_CLASS,Bike (0),Motorcycle (8),Các bbox hiện tại chia một xe máy thành phần trước/sau hoặc chỉ khoanh bánh; cần gộp/chỉnh bbox và đặt Motorcycle.,,NO
+R206,UNCLEAR,unclear_02.jpg,FIX_BBOX_AND_CLASS,Bike (0),Motorcycle (8),Các bbox hiện tại chia một xe máy thành phần trước/sau hoặc chỉ khoanh bánh; cần gộp/chỉnh bbox và đặt Motorcycle.,,NO
+R214,UNCLEAR,unclear_02.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R222,UNCLEAR,unclear_02.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R223,UNCLEAR,unclear_02.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R229,UNCLEAR,unclear_02.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R231,UNCLEAR,unclear_02.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R232,UNCLEAR,unclear_02.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R233,UNCLEAR,unclear_02.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R238,UNCLEAR,unclear_02.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R239,UNCLEAR,unclear_02.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R240,UNCLEAR,unclear_02.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R241,UNCLEAR,unclear_03.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R246,UNCLEAR,unclear_03.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R249,UNCLEAR,unclear_03.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R254,UNCLEAR,unclear_03.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R255,UNCLEAR,unclear_03.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R262,UNCLEAR,unclear_03.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R263,UNCLEAR,unclear_03.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R265,UNCLEAR,unclear_03.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R266,UNCLEAR,unclear_03.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R268,UNCLEAR,unclear_03.jpg,FIX_BBOX_MULTIPLE_BICYCLES,Bike (0),,BBox bao nhiều xe hoặc vật thể chồng nhau; cần xem ảnh gốc để vẽ từng object.,,NO
+R269,UNCLEAR,unclear_03.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R272,UNCLEAR,unclear_03.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R273,UNCLEAR,unclear_03.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R274,UNCLEAR,unclear_03.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R276,UNCLEAR,unclear_03.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R277,UNCLEAR,unclear_03.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R279,UNCLEAR,unclear_03.jpg,REVIEW_RENDER_AND_BBOX,Bike (0),,Crop/overlay có vấn đề hiển thị (crop đỏ đặc); xem ảnh gốc và nhãn trực tiếp trước khi kết luận.,,NO
+R281,UNCLEAR,unclear_03.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R291,UNCLEAR,unclear_04.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R299,UNCLEAR,unclear_04.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R300,UNCLEAR,unclear_04.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R303,UNCLEAR,unclear_04.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R304,UNCLEAR,unclear_04.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R308,UNCLEAR,unclear_04.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R314,UNCLEAR,unclear_04.jpg,REMOVE_OR_REANNOTATE_MIRROR_BBOX,Bike (0),,BBox Bike chỉ bao gương/chi tiết nhỏ của xe máy; không được chỉ đổi class sang Motorcycle.,,NO
+R315,UNCLEAR,unclear_04.jpg,REMOVE_OR_REANNOTATE_MIRROR_BBOX,Bike (0),,BBox Bike chỉ bao gương/chi tiết nhỏ của xe máy; không được chỉ đổi class sang Motorcycle.,,NO
+R316,UNCLEAR,unclear_04.jpg,RELABEL_MOTORCYCLE,Bike (0),Motorcycle (8),Xe máy rõ ràng với bbox tương đối hợp lý; đề xuất Motorcycle (8).,,NO
+R330,UNCLEAR,unclear_04.jpg,FIX_BBOX_MULTIPLE_BICYCLES,Bike (0),,BBox bao nhiều xe hoặc vật thể chồng nhau; cần xem ảnh gốc để vẽ từng object.,,NO
+R331,UNCLEAR,unclear_04.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R368,UNCLEAR,unclear_04.jpg,REMOVE_OR_REANNOTATE_MIRROR_BBOX,Bike (0),,BBox Bike chỉ bao gương/chi tiết nhỏ của xe máy; không được chỉ đổi class sang Motorcycle.,,NO
+R377,UNCLEAR,unclear_04.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R381,UNCLEAR,unclear_04.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO
+R390,UNCLEAR,unclear_04.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R394,UNCLEAR,unclear_04.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R396,UNCLEAR,unclear_04.jpg,REVIEW_EBIKE_TAXONOMY,Bike (0),,Xe có dáng xe đạp và/hoặc bàn đạp nhưng có khả năng trợ lực điện/động cơ; cần thống nhất quy tắc nhãn.,,NO
+R398,UNCLEAR,unclear_04.jpg,KEEP_BIKE,Bike (0),Bike (0),Nhìn thấy xe đạp và bàn đạp/bộ truyền động; không có bằng chứng xe máy rõ ràng trên sheet.,,NO

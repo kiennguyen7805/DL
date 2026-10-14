@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "model": "YOLO11n (E3)",
+      "input": "RGB 1x3x640x640",
+      "device": "cpu",
+      "parameters": 2594715,
+      "checkpoint": "results/E3_YOLO11n/weights/best.pt",
+      "ultralytics_info": null,
+      "gflops": null,
+      "flops_scope": "Ultralytics model.info, graph estimate; excludes preprocessing/NMS"
+    },
+    {
+      "model": "YOLO11s (E4)",
+      "input": "RGB 1x3x640x640",
+      "device": "cpu",
+      "parameters": 9437467,
+      "checkpoint": "results/E4_YOLO11s/checkpoints/best.pt",
+      "ultralytics_info": null,
+      "gflops": null,
+      "flops_scope": "Ultralytics model.info, graph estimate; excludes preprocessing/NMS"
+    },
+    {
+      "model": "Faster R-CNN (E6)",
+      "input": "RGB 1x3x640x640",
+      "device": "cpu",
+      "parameters": 43379153,
+      "checkpoint": "results/E6_Faster_RCNN/checkpoints/best_weights.zip",
+      "thop_macs": 226137984000.0,
+      "thop_params": 43379153.0,
+      "gflops_2mac": 452.275968,
+      "flops_scope": "THOP trace approximation; dynamic ROI/NMS operations may be omitted"
+    }
+  ],
+  "torch": "2.14.0+cpu"
+}

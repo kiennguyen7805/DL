@@ -1,0 +1,49 @@
+{
+  "version": "ROD_FINAL_A4",
+  "input_fingerprint": "4d0e46e15fedab139e2e7e078e0a700221878f4cf1d017ee8ab0ea400d3924ed",
+  "counts": {
+    "train": {
+      "images": 18151,
+      "labels": 18151
+    },
+    "valid": {
+      "images": 3318,
+      "labels": 3318
+    },
+    "test": {
+      "images": 1611,
+      "labels": 1611
+    }
+  },
+  "classes": [
+    "Bike",
+    "Building",
+    "Car",
+    "Person",
+    "Stairs",
+    "Traffic sign",
+    "Electrical Pole",
+    "Road",
+    "Motorcycle",
+    "Dustbin",
+    "Dog",
+    "Manhole",
+    "Tree",
+    "Guard rail",
+    "Pedestrian crosswalk",
+    "Truck",
+    "Bus",
+    "Bench",
+    "Traffic Cone",
+    "Fire hydrant",
+    "Teraffic Barrel",
+    "Plant Pot",
+    "Electrical Box",
+    "Chair",
+    "Bicycle Rack"
+  ],
+  "data_yaml_sha256": "84a776e32c59063930b3e036d91876921163f48de70a9e85eb8c2b3cc2ddcf52",
+  "final_build_sha256": "bcc215a7f79f7111375833bd6a9b472ad0b69b9485f2bf986a16ff5e5a0bc298",
+  "archive": "artifacts\\kaggle\\rod_detection_final.zip",
+  "archive_sha256": "114f4ab9380be9c047bf0beecfbcf0d24fa11ec8ba799b75a558ebb1974679b3"
+}

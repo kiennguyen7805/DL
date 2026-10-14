@@ -1,0 +1,20 @@
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T5]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{newtxtext,newtxmath}
+\else
+  \usepackage{fontspec}
+  \setmainfont{TeX Gyre Termes}
+\fi
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2.2cm,right=2.2cm]{geometry}
+\usepackage{amsmath,booktabs,array,graphicx,microtype}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.2em}
+\setlength{\columnsep}{0.65cm}
+\captionsetup{font=small,labelfont=bf}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\pending}{\textbf{Chưa có kết quả thực nghiệm}}
