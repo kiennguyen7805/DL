@@ -1,11 +1,5 @@
 # Phát hiện vật cản trong ảnh hướng tới hỗ trợ di chuyển cho người khiếm thị
 
-**Cài từ GitHub:** xem [hướng dẫn cài đặt và khôi phục artifact](docs/GITHUB_SETUP.md).
-Repo chứa code, notebook, báo cáo/slide hiện tại và [kết quả VALID/TEST](results/30epochs/VERIFIED_RESULTS.md).
-Dataset, checkpoint, môi trường Python và file tạm không được đưa lên GitHub.
-
-> Cập nhật 28/10/2026: kết quả hiện hành là bộ `results/30epochs/`; E6 dùng best mới sau 30 epoch và ngưỡng 0,60. `app/evaluation_lock.json` là chỉ mục local của các khóa gốc riêng từng model, được nhập sau đánh giá. Kết quả `results/E*/metrics/` và benchmark cũ bên dưới là lịch sử; không coi chúng là số mới. Chạy `python scripts/validate_final_test_results.py` để đối chiếu ba kết quả hiện hành.
-
 Dự án so sánh ba mô hình phát hiện vật cản trên ROD Final A4 và xây dựng ứng dụng **upload ảnh → phát hiện vật cản → hiển thị bounding box, tên lớp và confidence**. Phạm vi hiện tại không gồm webcam, ước lượng khoảng cách, cảnh báo giọng nói, GPS hay database. Demo có thêm bước phân vùng theo vị trí bbox (prototype, chưa kiểm chứng; xem phần ứng dụng).
 
 ## Dữ liệu và thí nghiệm
