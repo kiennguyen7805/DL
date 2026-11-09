@@ -24,9 +24,10 @@ E5 Scratch đã rời phạm vi nghiên cứu; code, báo cáo và cấu hình c
 
 **Kết quả cập nhật:** E3/E4/E6 hoàn tất các run 30 epoch, đã đánh giá đủ VALID/TEST. E6 mới nhập từ `results_valid_e6_30.zip`, ngưỡng VALID 0,60. Bảng hiện hành và bằng chứng tại [`results/30epochs/`](results/30epochs/).
 
-- E3: [`notebooks/kaggle_rod_e3_finalize_10epochs.ipynb`](notebooks/kaggle_rod_e3_finalize_10epochs.ipynb)
-- E4: [`notebooks/Kaggle_E4_YOLO11s_HF_AutoResume.ipynb`](notebooks/Kaggle_E4_YOLO11s_HF_AutoResume.ipynb)
-- E6: [`notebooks/Kaggle_E6_FasterRCNN_HF_AutoResume.ipynb`](notebooks/Kaggle_E6_FasterRCNN_HF_AutoResume.ipynb)
+- E3: [`notebooks/Kaggle_E3_30epochs_AutoResume.ipynb`](notebooks/Kaggle_E3_30epochs_AutoResume.ipynb)
+- E4: [`notebooks/Kaggle_E4_30epochs_AutoResume.ipynb`](notebooks/Kaggle_E4_30epochs_AutoResume.ipynb)
+- E6: [`notebooks/Kaggle_E6_30epochs_AutoResume.ipynb`](notebooks/Kaggle_E6_30epochs_AutoResume.ipynb)
+- E3/E4 VALID/TEST: [`notebooks/Kaggle_E3_E4_30epochs_Valid_Test.ipynb`](notebooks/Kaggle_E3_E4_30epochs_Valid_Test.ipynb).
 - E6 VALID/TEST trên Kaggle: [`Kaggle_E6_30epochs_Valid_Test.ipynb`](notebooks/Kaggle_E6_30epochs_Valid_Test.ipynb).
 - Hướng dẫn Kaggle: [`docs/kaggle/HUONG_DAN.md`](docs/kaggle/HUONG_DAN.md)
 - Trạng thái và bước tiếp: [`docs/plans/EXPERIMENT_STATUS.md`](docs/plans/EXPERIMENT_STATUS.md), [`docs/plans/MASTER_RESEARCH_ROADMAP.md`](docs/plans/MASTER_RESEARCH_ROADMAP.md)

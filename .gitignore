@@ -46,6 +46,20 @@ app/outputs/
 /baocao_final.pptx
 /12423TN_12423018_NguyenTranKien (2).pdf
 
+# Tai lieu phu va notebook cu chi giu local
+/FASTER_RCNN_RESNET50_FPN_V2_KIEN_TRUC.png
+/YOLO11_KIEN_TRUC_CHI_TIET.png
+/CAP_NHAT_BAO_CAO_KET_QUA_E3_E4_E6.md
+/rod_bbox_18_recommendations.csv
+/rod_bike_contact_sheet_review_recommendations.csv
+/rod_bike_contact_sheet_review_summary.md
+/kaggle_rod_main_staged_10epochs.ipynb
+/notebooks/kaggle_rod_main_staged_10epochs.ipynb
+/notebooks/Kaggle_E6_Valid_Test.ipynb
+/notebooks/Kaggle_HF_Checkpoint_Upload_Diagnostic.ipynb
+/notebooks/Kaggle_HF_Cleanup_Snapshots.ipynb
+/notebooks/Kaggle_HF_Upload_Diagnostic.ipynb
+
 # Chi cong bo ket qua danh gia hien hanh, khong cong bo weights/dataset
 !results/30epochs/
 results/30epochs/**
