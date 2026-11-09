@@ -1,15 +1,15 @@
 {
   "data_yaml_sha256": "84a776e32c59063930b3e036d91876921163f48de70a9e85eb8c2b3cc2ddcf52",
-  "confidence_config_sha256": "6900013b78a3eb2cb66e865d4d8868ad98a2d3e497b49aacd29d0bc3faf1272f",
+  "confidence_config_sha256": "2bdcd51155040f0b722729ed0e05a7da8f2e2002b3e7e12d706ca9ae65715a02",
   "checkpoints": {
-    "E3": "41f7943cbab67d1d5920e2852068b1e98d22eda8023f978abcb608a65a2aed02",
-    "E4": "dc09c71052027e9083f014b99144edb65bcdc2ed032ab3591fce0db52b26e2f5",
-    "E6": "ce459c56afc57efec80c63ab213bab60ecb9a966c78a1396051de6524783f9bd"
+    "E3": "d88b24f020a75464d2df2197b8fefeb16be2ebb735f361d19ba569b0dfc33786",
+    "E4": "a5c32e2fc8be4eb59dd80b67d76ac8abfc4a5ab13437814962ea2c463dffe1ce",
+    "E6": "a75beb6e3d8629bf9066bc8a03a0b44de93a720aa3d7b3663f0641b732ae8a8f"
   },
   "thresholds": {
-    "E3": 0.22,
-    "E4": 0.19,
-    "E6": 0.59
+    "E3": 0.27,
+    "E4": 0.24,
+    "E6": 0.6
   },
   "protocol": {
     "evaluation_split_order": [
@@ -40,5 +40,12 @@
     "area": "all",
     "crowd_ignore": false,
     "ap_scope": "predictions with model score >= 0.01; not the official COCO scorer"
+  },
+  "schema": "imported-per-model-valid-locks-v1",
+  "provenance": "Local index imported after evaluation; original pre-TEST locks are preserved in results/30epochs/{model}/evaluation_lock.json",
+  "source_lock_sha256": {
+    "E3": "34a401301fc5493f5d3c0efda397e7de0bcbc9c123fd619a17d1bee82d1f3614",
+    "E4": "c7a502d1f6b910908cb4990795197210fad9d86766b5186ad7daca0da77e6319",
+    "E6": "9d5258183ae23f81d2315afb5711b66223d3bfd28f99212c0088980e83ba7b89"
   }
 }

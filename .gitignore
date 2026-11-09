@@ -24,3 +24,42 @@ venv/
 app/.model_cache/
 app/outputs/
 
+# File local, cache, token va goi ban giao
+/tmp/
+/output/
+/.pytest_cache/
+/.codex/
+/.agents/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pth
+*.onnx
+*.engine
+~$*
+/results_zips/
+/handoff_report_slide/
+/artifacts/training_30epochs/
+/artifacts/hf_checkpoints/
+/baocao_final.pptx
+/12423TN_12423018_NguyenTranKien (2).pdf
+
+# Chi cong bo ket qua danh gia hien hanh, khong cong bo weights/dataset
+!results/30epochs/
+results/30epochs/**
+!results/30epochs/summary_E3_E4_E6.csv
+!results/30epochs/summary_E3_E4_E6.json
+!results/30epochs/VERIFIED_RESULTS.md
+!results/30epochs/E[346]/
+!results/30epochs/E[346]/evaluation_lock.json
+!results/30epochs/E[346]/valid/
+!results/30epochs/E[346]/valid/*.json
+!results/30epochs/E[346]/valid/*.jsonl
+!results/30epochs/E[346]/valid/*.csv
+!results/30epochs/E[346]/test/
+!results/30epochs/E[346]/test/*.json
+!results/30epochs/E[346]/test/*.jsonl
+!results/30epochs/E[346]/test/*.csv
+

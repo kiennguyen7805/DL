@@ -1,8 +1,8 @@
 """Validate the three locked TEST reports and write one presentation summary.
 
-This script never performs inference.  It only accepts reports produced by
-``python -m app.evaluate_test --confirm-locked-test`` and fails closed when a
-report, class row, lock hash, or evaluation protocol is inconsistent.
+This script never performs inference. It validates current imported Kaggle
+reports against their original per-model VALID locks, and also supports legacy
+local FINAL_LOCKED reports. Inconsistent provenance or metric protocols fail.
 """
 
 from __future__ import annotations
@@ -15,9 +15,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LOCK = ROOT / "app/evaluation_lock.json"
 REPORTS = {
-    "E3": ROOT / "results/E3_YOLO11n/metrics/common_test.json",
-    "E4": ROOT / "results/E4_YOLO11s/metrics/common_test.json",
-    "E6": ROOT / "results/E6_Faster_RCNN/metrics/common_test.json",
+    model: ROOT / "results/30epochs" / model / "test/metrics.json"
+    for model in ("E3", "E4", "E6")
 }
 EXPECTED_IMAGES = 1611
 EXPECTED_OBJECTS = 2354
@@ -41,13 +40,15 @@ def load_and_validate() -> dict:
         if not path.is_file():
             raise FileNotFoundError(f"Missing locked TEST report: {path}")
         report = json.loads(path.read_text(encoding="utf-8"))
+        imported = lock.get("schema") == "imported-per-model-valid-locks-v1"
+        expected_lock = lock["source_lock_sha256"][model_id] if imported else lock_hash
         checks = {
             "model": report.get("model") == model_id,
             "split": report.get("split") == "test",
-            "status": report.get("status") == "FINAL_LOCKED",
+            "status": report.get("status") in ({"FINAL_AFTER_VALID_LOCK", "FINAL_LOCKED_30EPOCH"} if imported else {"FINAL_LOCKED"}),
             "images": report.get("images") == EXPECTED_IMAGES,
             "objects": report.get("ground_truth_objects") == EXPECTED_OBJECTS,
-            "lock": report.get("lock_sha256") == lock_hash,
+            "lock": report.get("lock_sha256") == expected_lock,
             "per_class": len(report.get("per_class", [])) == EXPECTED_CLASSES,
             "class_ids": [row.get("class_id") for row in report.get("per_class", [])]
             == list(range(EXPECTED_CLASSES)),
@@ -58,6 +59,19 @@ def load_and_validate() -> dict:
         expected_threshold = lock["thresholds"][model_id]
         if abs(float(report["operating_threshold"]) - float(expected_threshold)) > 1e-12:
             raise RuntimeError(f"{model_id} TEST threshold differs from evaluation lock")
+        if imported:
+            folder = path.parent.parent
+            original_lock = folder / "evaluation_lock.json"
+            metadata = json.loads((path.parent / "metadata.json").read_text(encoding="utf-8"))
+            if sha256(original_lock) != expected_lock:
+                raise RuntimeError(f"{model_id} original VALID lock changed")
+            if (report.get("checkpoint_sha256") != lock["checkpoints"][model_id] or
+                    metadata.get("checkpoint_sha256") != lock["checkpoints"][model_id] or
+                    metadata.get("data_yaml_sha256") != lock["data_yaml_sha256"] or
+                    metadata.get("lock_sha256") != expected_lock or
+                    report.get("data_yaml_sha256", metadata.get("data_yaml_sha256")) != lock["data_yaml_sha256"] or
+                    report.get("prediction_sha256") != sha256(path.parent / "predictions.jsonl")):
+                raise RuntimeError(f"{model_id} TEST provenance mismatch")
         protocol = report.get("protocol")
         if protocol is not None:
             protocols.append(json.dumps(protocol, sort_keys=True))

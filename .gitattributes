@@ -1,0 +1,4 @@
+# Preserve the original bytes used by SHA256 provenance validation.
+results/30epochs/** -text whitespace=cr-at-eol
+app/confidence_config.json -text whitespace=cr-at-eol
+app/evaluation_lock.json -text whitespace=cr-at-eol

@@ -1,0 +1,16 @@
+{
+  "checkpoint_sha256": "d88b24f020a75464d2df2197b8fefeb16be2ebb735f361d19ba569b0dfc33786",
+  "data_yaml_sha256": "84a776e32c59063930b3e036d91876921163f48de70a9e85eb8c2b3cc2ddcf52",
+  "device": "0",
+  "images": 3318,
+  "inference": {
+    "conf": 0.01,
+    "imgsz": 640,
+    "iou": 0.7,
+    "max_det": 300
+  },
+  "model": "E3",
+  "split": "valid",
+  "torch": "2.11.0+cu128",
+  "ultralytics": "8.4.165"
+}

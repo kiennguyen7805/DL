@@ -12,7 +12,7 @@ from app.evaluator import IOU_THRESHOLDS, MAX_DET, METRIC_PROTOCOL, OPERATING_MA
 from app.model_adapters import CHECKPOINTS, DATA_YAML, ROOT, require_checkpoint, rod_names, sha256_file
 
 
-IDS = {"E3": "YOLO11n (E3)", "E4": "YOLO11s (E4)", "E6": "Faster R-CNN (E6)"}
+IDS = {"E3": "YOLO11n (E3, 30 epoch)", "E4": "YOLO11s (E4, 30 epoch)", "E6": "Faster R-CNN (E6)"}
 FOLDERS = {"E3": "E3_YOLO11n", "E4": "E4_YOLO11s", "E6": "E6_Faster_RCNN"}
 LOCK_PATH = ROOT / "app/evaluation_lock.json"
 PROTOCOL = {
@@ -33,6 +33,9 @@ def _path(model_id: str, filename: str) -> Path:
 
 
 def cache_path(model_id: str) -> Path:
+    current = ROOT / "results/30epochs" / model_id / "valid/predictions.jsonl"
+    if current.is_file():
+        return current
     return ROOT / "results" / FOLDERS[model_id] / "confidence" / f"{model_id}_valid_predictions.jsonl"
 
 
@@ -40,10 +43,16 @@ def load_valid_records(model_id: str, *, limit: int | None = None) -> list[dict]
     if model_id not in IDS:
         raise ValueError("Unknown model")
     path = cache_path(model_id)
-    meta_path = path.with_name(f"{model_id}_valid_metadata.json")
+    current = path.name == "predictions.jsonl"
+    meta_path = path.with_name("metadata.json" if current else f"{model_id}_valid_metadata.json")
     if not path.is_file() or not meta_path.is_file():
         raise FileNotFoundError(f"Missing VALID prediction/metadata for {model_id}")
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    if current:
+        inference = meta.get("inference", {})
+        meta = {**meta, "image_count": meta.get("images"),
+                "collection_conf": inference.get("conf"),
+                "nms_iou": inference.get("iou"), "max_det": inference.get("max_det")}
     if (meta.get("model") != model_id or meta.get("split") != "valid" or
             meta.get("image_count") != 3318 or
             meta.get("checkpoint_sha256") != CHECKPOINTS[IDS[model_id]][1] or
@@ -127,7 +136,27 @@ def verify_lock() -> dict:
     if not LOCK_PATH.is_file():
         raise RuntimeError("Missing frozen VALID evaluation lock; TEST is blocked")
     locked = json.loads(LOCK_PATH.read_text(encoding="utf-8"))
-    if locked != fingerprint():
+    if locked.get("schema") == "imported-per-model-valid-locks-v1":
+        # This is a local index of original locks, not a new pre-TEST lock.
+        expected = {key: locked.get(key) for key in fingerprint()}
+        if expected != fingerprint():
+            raise RuntimeError("Evaluation lock fingerprint mismatch; TEST is blocked")
+        for model_id in IDS:
+            folder = ROOT / "results/30epochs" / model_id
+            source = folder / "evaluation_lock.json"
+            if sha256_file(source) != locked["source_lock_sha256"][model_id]:
+                raise RuntimeError(f"Imported VALID lock changed: {model_id}")
+            original = json.loads(source.read_text(encoding="utf-8"))
+            if (original["checkpoint_sha256"] != locked["checkpoints"][model_id] or
+                    original["threshold"] != locked["thresholds"][model_id] or
+                    original["data_yaml_sha256"] != locked["data_yaml_sha256"] or
+                    original["valid_prediction_sha256"] != sha256_file(folder / "valid/predictions.jsonl")):
+                raise RuntimeError(f"Imported VALID evidence mismatch: {model_id}")
+            for field, relative in [("valid_metrics_sha256", "valid/metrics.json"),
+                                    ("threshold_sweep_sha256", "valid/threshold_sweep.csv")]:
+                if field in original and original[field] != sha256_file(folder / relative):
+                    raise RuntimeError(f"Imported VALID evidence changed: {model_id}: {field}")
+    elif locked != fingerprint():
         raise RuntimeError("Evaluation lock fingerprint mismatch; TEST is blocked")
     for model_id, option in IDS.items():
         require_checkpoint(option)

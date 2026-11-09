@@ -49,20 +49,23 @@ def test_uncalibrated_fallback_is_explicit(tmp_path):
     assert selected.precision is None
 
 
-def test_no_slider_and_only_two_user_inputs():
+def test_manual_confidence_slider_is_available():
     demo = build_app()
     assert isinstance(demo, gr.Blocks)
-    assert all(component.__class__.__name__ != "Slider" for component in demo.blocks.values())
+    sliders = [component for component in demo.blocks.values()
+               if component.__class__.__name__ == "Slider"]
+    assert len(sliders) == 1
+    assert sliders[0].minimum == 0.01 and sliders[0].maximum == 0.99
     button = next(component for component in demo.blocks.values() if component.__class__.__name__ == "Button")
     assert button.value == "Phát hiện vật cản"
 
 
 @pytest.mark.parametrize("model_id", ("E3", "E4"))
 def test_full_valid_evidence_reproduces_selected_threshold(model_id):
-    folder = ROOT / "results" / ("E3_YOLO11n" if model_id == "E3" else "E4_YOLO11s") / "confidence"
-    metadata = json.loads((folder / f"{model_id}_valid_metadata.json").read_text(encoding="utf-8"))
-    assert metadata["split"] == "valid" and metadata["image_count"] == 3318
-    path = folder / f"{model_id}_valid_predictions.jsonl"
+    folder = ROOT / "results" / "30epochs" / model_id / "valid"
+    metadata = json.loads((folder / "metadata.json").read_text(encoding="utf-8"))
+    assert metadata["split"] == "valid" and metadata["images"] == 3318
+    path = folder / "predictions.jsonl"
     records = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
     assert len(records) == len({row["image"] for row in records}) == 3318
     assert all(row["image"].startswith("IMG_") for row in records)

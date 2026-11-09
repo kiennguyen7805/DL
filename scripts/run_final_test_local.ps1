@@ -1,5 +1,4 @@
 param(
-    [switch]$SkipSlides,
     [string]$PythonPath = ''
 )
 
@@ -50,19 +49,7 @@ foreach ($model in @('E4', 'E6')) {
 
 Write-Host '=== VERIFY: E3/E4/E6 locked TEST ===' -ForegroundColor Cyan
 & $python scripts/validate_final_test_results.py
-if ($LASTEXITCODE -ne 0) { throw 'Final TEST validation FAIL; slide khong duoc cap nhat' }
-
-if (-not $SkipSlides) {
-    Write-Host '=== BUILD: cap nhat slide bang TEST ===' -ForegroundColor Cyan
-    & (Join-Path $root 'docs/presentation/build_deck.ps1')
-    if ($LASTEXITCODE -ne 0) { throw 'Base slide build FAIL' }
-    & (Join-Path $root 'docs/presentation/augment_yolo11_architecture.ps1')
-    if ($LASTEXITCODE -ne 0) { throw 'Detailed slide build FAIL' }
-}
+if ($LASTEXITCODE -ne 0) { throw 'Final TEST validation FAIL' }
 
 Write-Host '=== HOAN THANH ===' -ForegroundColor Green
 Write-Host (Join-Path $root 'results/final_test_summary.json')
-if (-not $SkipSlides) {
-    Write-Host (Join-Path $root 'docs/presentation/BAO_VE_DO_AN_HOC_SAU_PHAT_HIEN_VAT_CAN_YOLO11_CHI_TIET.pptx')
-    Write-Host (Join-Path $root 'BAO_CAO_PHAT_HIEN_VAT_CAN_DAY_DU (1)_SLIDES_YOLO11.pdf')
-}

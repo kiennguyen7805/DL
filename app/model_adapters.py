@@ -9,7 +9,6 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Protocol
 
-import numpy as np
 import torch
 import yaml
 from PIL import Image
@@ -21,13 +20,13 @@ from ultralytics import YOLO
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_YAML = ROOT / "data/processed/rod_detection_final/data.yaml"
-E3_CHECKPOINT = ROOT / "results/E3_YOLO11n/weights/best.pt"
-E4_CHECKPOINT = ROOT / "results/E4_YOLO11s/checkpoints/best.pt"
-E6_CHECKPOINT = ROOT / "results/E6_Faster_RCNN/checkpoints/best_weights.zip"
+E3_CHECKPOINT = ROOT / "results/30epochs/E3/checkpoint/best.pt"
+E4_CHECKPOINT = ROOT / "results/30epochs/E4/checkpoint/best.pt"
+E6_CHECKPOINT = ROOT / "results/30epochs/E6/checkpoint/best_weights.pth"
 CHECKPOINTS = {
-    "YOLO11n (E3)": (E3_CHECKPOINT, "41f7943cbab67d1d5920e2852068b1e98d22eda8023f978abcb608a65a2aed02"),
-    "YOLO11s (E4)": (E4_CHECKPOINT, "dc09c71052027e9083f014b99144edb65bcdc2ed032ab3591fce0db52b26e2f5"),
-    "Faster R-CNN (E6)": (E6_CHECKPOINT, "ce459c56afc57efec80c63ab213bab60ecb9a966c78a1396051de6524783f9bd"),
+    "YOLO11n (E3, 30 epoch)": (E3_CHECKPOINT, "d88b24f020a75464d2df2197b8fefeb16be2ebb735f361d19ba569b0dfc33786"),
+    "YOLO11s (E4, 30 epoch)": (E4_CHECKPOINT, "a5c32e2fc8be4eb59dd80b67d76ac8abfc4a5ab13437814962ea2c463dffe1ce"),
+    "Faster R-CNN (E6)": (E6_CHECKPOINT, "a75beb6e3d8629bf9066bc8a03a0b44de93a720aa3d7b3663f0641b732ae8a8f"),
 }
 MODEL_OPTIONS = tuple(CHECKPOINTS)
 
@@ -104,7 +103,7 @@ class YoloAdapter:
         _sync(device)
         started = time.perf_counter()
         result = self.model.predict(
-            source=np.asarray(image), conf=threshold, imgsz=640, iou=0.7,
+            source=image, conf=threshold, imgsz=640, iou=0.7,
             max_det=300, device="0" if device == "cuda" else "cpu",
             verbose=False, save=False,
         )[0]

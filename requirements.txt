@@ -6,4 +6,5 @@ PyYAML>=6.0
 pandas
 matplotlib
 Pillow
+huggingface_hub>=0.24
 gradio>=6.0,<7.0

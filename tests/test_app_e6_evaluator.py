@@ -1,6 +1,7 @@
 """E6 app integration and common metric protocol; TRAIN/synthetic data only."""
 
 from pathlib import Path
+import json
 
 import gradio as gr
 import pytest
@@ -118,3 +119,22 @@ def test_test_run_blocked_before_opening_test_split(tmp_path, monkeypatch):
     monkeypatch.setattr("app.evaluate_models.LOCK_PATH", tmp_path / "missing.json")
     with pytest.raises(RuntimeError, match="Missing frozen"):
         verify_lock()
+
+
+def test_imported_valid_lock_hash_tamper_is_rejected(tmp_path, monkeypatch):
+    index = json.loads((ROOT / 'app/evaluation_lock.json').read_text(encoding='utf-8'))
+    index['source_lock_sha256']['E6'] = '0' * 64
+    changed = tmp_path / 'changed-index.json'
+    changed.write_text(json.dumps(index), encoding='utf-8')
+    monkeypatch.setattr('app.evaluate_models.LOCK_PATH', changed)
+    with pytest.raises(RuntimeError, match='Imported VALID lock changed: E6'):
+        verify_lock()
+
+
+def test_current_test_reports_use_the_deployed_checkpoint_and_threshold():
+    from scripts.validate_final_test_results import load_and_validate
+    from app.model_adapters import CHECKPOINTS
+    result = load_and_validate()['models']['E6']
+    assert result['checkpoint_sha256'] == CHECKPOINTS[E6][1]
+    assert result['operating_threshold'] == auto_confidence(E6).threshold == 0.60
+    assert (result['images'], result['ground_truth_objects']) == (1611, 2354)

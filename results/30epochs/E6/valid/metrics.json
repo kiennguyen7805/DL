@@ -1,0 +1,301 @@
+{
+  "model": "E6",
+  "split": "valid",
+  "status": "FULL_VALID",
+  "images": 3318,
+  "ground_truth_objects": 5320,
+  "operating_threshold": 0.6,
+  "precision": 0.7509188105579686,
+  "recall": 0.8449248120300752,
+  "f2": 0.8242866573754859,
+  "tp": 4495,
+  "fp": 1491,
+  "fn": 825,
+  "map50": 0.8702633653559124,
+  "map50_95": 0.6605074586687047,
+  "checkpoint_sha256": "a75beb6e3d8629bf9066bc8a03a0b44de93a720aa3d7b3663f0641b732ae8a8f",
+  "prediction_sha256": "bc0bb53a1090f38728d51dad16380afd33ae1cdad6810b6ab84d34ad882136af",
+  "data_yaml_sha256": "84a776e32c59063930b3e036d91876921163f48de70a9e85eb8c2b3cc2ddcf52",
+  "protocol": {
+    "iou_thresholds": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "ap_recall_points": 101,
+    "max_detections_per_image": 100,
+    "operating_max_detections_per_image": 300,
+    "match": "class-aware greedy, score descending",
+    "area": "all",
+    "crowd_ignore": false,
+    "note": "COCO-style interpolation; ROD has no crowd/ignore labels"
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "Bike",
+      "gt_count": 91,
+      "ap50": 0.9277609166006165,
+      "ap50_95": 0.7840455264479815,
+      "tp": 81,
+      "fp": 20,
+      "fn": 10
+    },
+    {
+      "class_id": 1,
+      "class_name": "Building",
+      "gt_count": 101,
+      "ap50": 0.8315762022797627,
+      "ap50_95": 0.6369339262178462,
+      "tp": 87,
+      "fp": 32,
+      "fn": 14
+    },
+    {
+      "class_id": 2,
+      "class_name": "Car",
+      "gt_count": 996,
+      "ap50": 0.8679125170212866,
+      "ap50_95": 0.6188039029129639,
+      "tp": 817,
+      "fp": 197,
+      "fn": 179
+    },
+    {
+      "class_id": 3,
+      "class_name": "Person",
+      "gt_count": 987,
+      "ap50": 0.8104571867884235,
+      "ap50_95": 0.5347910389935155,
+      "tp": 770,
+      "fp": 200,
+      "fn": 217
+    },
+    {
+      "class_id": 4,
+      "class_name": "Stairs",
+      "gt_count": 336,
+      "ap50": 0.8952835841878896,
+      "ap50_95": 0.6228778067008167,
+      "tp": 313,
+      "fp": 205,
+      "fn": 23
+    },
+    {
+      "class_id": 5,
+      "class_name": "Traffic sign",
+      "gt_count": 104,
+      "ap50": 0.6593244610647805,
+      "ap50_95": 0.3767734468582088,
+      "tp": 73,
+      "fp": 61,
+      "fn": 31
+    },
+    {
+      "class_id": 6,
+      "class_name": "Electrical Pole",
+      "gt_count": 76,
+      "ap50": 0.7654986802621266,
+      "ap50_95": 0.4991335297409771,
+      "tp": 56,
+      "fp": 15,
+      "fn": 20
+    },
+    {
+      "class_id": 7,
+      "class_name": "Road",
+      "gt_count": 84,
+      "ap50": 0.7903218267239718,
+      "ap50_95": 0.5066985994970366,
+      "tp": 74,
+      "fp": 41,
+      "fn": 10
+    },
+    {
+      "class_id": 8,
+      "class_name": "Motorcycle",
+      "gt_count": 84,
+      "ap50": 0.6718626130163418,
+      "ap50_95": 0.441167234353114,
+      "tp": 54,
+      "fp": 31,
+      "fn": 30
+    },
+    {
+      "class_id": 9,
+      "class_name": "Dustbin",
+      "gt_count": 153,
+      "ap50": 0.8863861558123914,
+      "ap50_95": 0.7733273610842726,
+      "tp": 133,
+      "fp": 18,
+      "fn": 20
+    },
+    {
+      "class_id": 10,
+      "class_name": "Dog",
+      "gt_count": 65,
+      "ap50": 0.9704069058113362,
+      "ap50_95": 0.7581924499538657,
+      "tp": 63,
+      "fp": 18,
+      "fn": 2
+    },
+    {
+      "class_id": 11,
+      "class_name": "Manhole",
+      "gt_count": 478,
+      "ap50": 0.9465242447967139,
+      "ap50_95": 0.8068138474302675,
+      "tp": 448,
+      "fp": 58,
+      "fn": 30
+    },
+    {
+      "class_id": 12,
+      "class_name": "Tree",
+      "gt_count": 277,
+      "ap50": 0.8319389450997402,
+      "ap50_95": 0.5482744013494936,
+      "tp": 218,
+      "fp": 44,
+      "fn": 59
+    },
+    {
+      "class_id": 13,
+      "class_name": "Guard rail",
+      "gt_count": 128,
+      "ap50": 0.7274997748536587,
+      "ap50_95": 0.5210593630298386,
+      "tp": 96,
+      "fp": 29,
+      "fn": 32
+    },
+    {
+      "class_id": 14,
+      "class_name": "Pedestrian crosswalk",
+      "gt_count": 344,
+      "ap50": 0.7971907780196791,
+      "ap50_95": 0.4996376411941674,
+      "tp": 280,
+      "fp": 177,
+      "fn": 64
+    },
+    {
+      "class_id": 15,
+      "class_name": "Truck",
+      "gt_count": 159,
+      "ap50": 0.8756835320844496,
+      "ap50_95": 0.6613767176671383,
+      "tp": 136,
+      "fp": 42,
+      "fn": 23
+    },
+    {
+      "class_id": 16,
+      "class_name": "Bus",
+      "gt_count": 150,
+      "ap50": 0.8542962793623101,
+      "ap50_95": 0.6541763300821304,
+      "tp": 127,
+      "fp": 53,
+      "fn": 23
+    },
+    {
+      "class_id": 17,
+      "class_name": "Bench",
+      "gt_count": 40,
+      "ap50": 0.9706361922543837,
+      "ap50_95": 0.7232934476906487,
+      "tp": 38,
+      "fp": 13,
+      "fn": 2
+    },
+    {
+      "class_id": 18,
+      "class_name": "Traffic Cone",
+      "gt_count": 171,
+      "ap50": 0.9494158679617006,
+      "ap50_95": 0.6463069670603548,
+      "tp": 165,
+      "fp": 38,
+      "fn": 6
+    },
+    {
+      "class_id": 19,
+      "class_name": "Fire hydrant",
+      "gt_count": 25,
+      "ap50": 0.996953541507997,
+      "ap50_95": 0.8560708695809858,
+      "tp": 25,
+      "fp": 1,
+      "fn": 0
+    },
+    {
+      "class_id": 20,
+      "class_name": "Teraffic Barrel",
+      "gt_count": 17,
+      "ap50": 0.9864986498649866,
+      "ap50_95": 0.8966865436543655,
+      "tp": 16,
+      "fp": 5,
+      "fn": 1
+    },
+    {
+      "class_id": 21,
+      "class_name": "Plant Pot",
+      "gt_count": 37,
+      "ap50": 0.9041298926272717,
+      "ap50_95": 0.7361864436542701,
+      "tp": 34,
+      "fp": 18,
+      "fn": 3
+    },
+    {
+      "class_id": 22,
+      "class_name": "Electrical Box",
+      "gt_count": 29,
+      "ap50": 1.0,
+      "ap50_95": 0.9337527466048623,
+      "tp": 29,
+      "fp": 5,
+      "fn": 0
+    },
+    {
+      "class_id": 23,
+      "class_name": "Chair",
+      "gt_count": 351,
+      "ap50": 0.9196627719716439,
+      "ap50_95": 0.7121305496242576,
+      "tp": 327,
+      "fp": 158,
+      "fn": 24
+    },
+    {
+      "class_id": 24,
+      "class_name": "Bicycle Rack",
+      "gt_count": 37,
+      "ap50": 0.9193626139243496,
+      "ap50_95": 0.7641757753342384,
+      "tp": 35,
+      "fp": 12,
+      "fn": 2
+    }
+  ],
+  "calibration": {
+    "threshold": 0.6,
+    "precision": 0.7509188105579686,
+    "recall": 0.8449248120300752,
+    "f2": 0.8242866573754859,
+    "tp": 4495,
+    "fp": 1491,
+    "fn": 825
+  }
+}

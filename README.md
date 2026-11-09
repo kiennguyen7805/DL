@@ -1,6 +1,12 @@
 # Phát hiện vật cản trong ảnh hướng tới hỗ trợ di chuyển cho người khiếm thị
 
-Dự án so sánh ba mô hình phát hiện vật cản trên ROD Final A4 và xây dựng ứng dụng **upload ảnh → phát hiện vật cản → hiển thị bounding box, tên lớp và confidence**. Phạm vi hiện tại không gồm webcam, ước lượng khoảng cách, cảnh báo giọng nói, GPS hay database.
+**Cài từ GitHub:** xem [hướng dẫn cài đặt và khôi phục artifact](docs/GITHUB_SETUP.md).
+Repo chứa code, notebook, báo cáo/slide hiện tại và [kết quả VALID/TEST](results/30epochs/VERIFIED_RESULTS.md).
+Dataset, checkpoint, môi trường Python và file tạm không được đưa lên GitHub.
+
+> Cập nhật 28/10/2026: kết quả hiện hành là bộ `results/30epochs/`; E6 dùng best mới sau 30 epoch và ngưỡng 0,60. `app/evaluation_lock.json` là chỉ mục local của các khóa gốc riêng từng model, được nhập sau đánh giá. Kết quả `results/E*/metrics/` và benchmark cũ bên dưới là lịch sử; không coi chúng là số mới. Chạy `python scripts/validate_final_test_results.py` để đối chiếu ba kết quả hiện hành.
+
+Dự án so sánh ba mô hình phát hiện vật cản trên ROD Final A4 và xây dựng ứng dụng **upload ảnh → phát hiện vật cản → hiển thị bounding box, tên lớp và confidence**. Phạm vi hiện tại không gồm webcam, ước lượng khoảng cách, cảnh báo giọng nói, GPS hay database. Demo có thêm bước phân vùng theo vị trí bbox (prototype, chưa kiểm chứng; xem phần ứng dụng).
 
 ## Dữ liệu và thí nghiệm
 
@@ -8,44 +14,50 @@ ROD Final A4 tại [`data/processed/rod_detection_final/`](data/processed/rod_de
 
 | ID | Mô hình | Trạng thái có bằng chứng |
 |---|---|---|
-| E3 | YOLO11n COCO Pretrained | 10/10 epoch; artifact và checkpoint đã kiểm tra local |
-| E4 | YOLO11s COCO Pretrained | 10/10 epoch trên Kaggle; checkpoint `best.pt` đã nạp local; hậu kiểm toàn bộ artifact còn tiếp tục |
-| E6 | Faster R-CNN ResNet-50 FPN V2 COCO Pretrained | Người dùng ghi nhận 10/10 epoch; best weights local nạp đúng kiến trúc 26 lớp; thiếu log training rời để hậu kiểm độc lập toàn bộ epoch |
+| E3 | YOLO11n COCO Pretrained | 30/30 epoch; checkpoint và đánh giá VALID/TEST đã xác minh local |
+| E4 | YOLO11s COCO Pretrained | 30/30 epoch; checkpoint và đánh giá VALID/TEST đã xác minh local |
+| E6 | Faster R-CNN ResNet-50 FPN V2 COCO Pretrained | 30/30 epoch; best checkpoint mới đã đánh giá đủ VALID/TEST, ngưỡng 0,60 |
 
 E5 Scratch đã rời phạm vi nghiên cứu; code, báo cáo và cấu hình cũ được giữ để truy vết, không thuộc kế hoạch thực thi.
 
 ## Điểm vào hiện hành
 
+**Kết quả cập nhật:** E3/E4/E6 hoàn tất các run 30 epoch, đã đánh giá đủ VALID/TEST. E6 mới nhập từ `results_valid_e6_30.zip`, ngưỡng VALID 0,60. Bảng hiện hành và bằng chứng tại [`results/30epochs/`](results/30epochs/).
+
 - E3: [`notebooks/kaggle_rod_e3_finalize_10epochs.ipynb`](notebooks/kaggle_rod_e3_finalize_10epochs.ipynb)
 - E4: [`notebooks/Kaggle_E4_YOLO11s_HF_AutoResume.ipynb`](notebooks/Kaggle_E4_YOLO11s_HF_AutoResume.ipynb)
 - E6: [`notebooks/Kaggle_E6_FasterRCNN_HF_AutoResume.ipynb`](notebooks/Kaggle_E6_FasterRCNN_HF_AutoResume.ipynb)
+- E6 VALID/TEST trên Kaggle: [`Kaggle_E6_30epochs_Valid_Test.ipynb`](notebooks/Kaggle_E6_30epochs_Valid_Test.ipynb).
 - Hướng dẫn Kaggle: [`docs/kaggle/HUONG_DAN.md`](docs/kaggle/HUONG_DAN.md)
 - Trạng thái và bước tiếp: [`docs/plans/EXPERIMENT_STATUS.md`](docs/plans/EXPERIMENT_STATUS.md), [`docs/plans/MASTER_RESEARCH_ROADMAP.md`](docs/plans/MASTER_RESEARCH_ROADMAP.md)
 
 ## Checkpoint và ứng dụng
 
-- E3: [`results/E3_YOLO11n/weights/best.pt`](results/E3_YOLO11n/weights/best.pt); full recovery ở cùng thư mục. ZIP Kaggle gốc và artifact hậu kiểm ở [`archive/e3_kaggle_evidence/`](archive/e3_kaggle_evidence/).
-- E4: [`results/E4_YOLO11s/checkpoints/best.pt`](results/E4_YOLO11s/checkpoints/best.pt); metrics ở [`results/E4_YOLO11s/metrics/results.txt`](results/E4_YOLO11s/metrics/results.txt), cấu hình run ở [`results/E4_YOLO11s/logs/config.txt`](results/E4_YOLO11s/logs/config.txt). Full recovery và `last.zip` giữ trong `checkpoints/`.
-- E6: [`results/E6_Faster_RCNN/checkpoints/best_weights.zip`](results/E6_Faster_RCNN/checkpoints/best_weights.zip) và [`checkpoint.zip`](results/E6_Faster_RCNN/checkpoints/checkpoint.zip) là checkpoint PyTorch (đuôi `.zip`), không phải archive cần giải nén. Metrics/config/manifest huấn luyện rời của E6 vẫn thiếu ở local; adapter Torchvision đã nạp được best weights. Ngưỡng vận hành 0,59 đã được chọn bằng F2 trên toàn bộ VALID, với bằng chứng tại `results/E6_Faster_RCNN/confidence/`.
+- E3: [`results/30epochs/E3/checkpoint/best.pt`](results/30epochs/E3/checkpoint/best.pt), SHA256 `d88b24f0…c33786`; ngưỡng VALID 0,27.
+- E4: [`results/30epochs/E4/checkpoint/best.pt`](results/30epochs/E4/checkpoint/best.pt), SHA256 `a5c32e2f…ffe1ce`; ngưỡng VALID 0,24.
+- E6: [`results/30epochs/E6/checkpoint/best_weights.pth`](results/30epochs/E6/checkpoint/best_weights.pth), SHA256 `a75beb6e3d8629bf9066bc8a03a0b44de93a720aa3d7b3663f0641b732ae8a8f`; run hoàn tất 30/30, ngưỡng VALID 0,60.
+- E6 VALID/TEST: ngưỡng **0,60**, VALID mAP50–95 0,660507, TEST mAP50–95 0,677107. Bảng ba mô hình: [`summary_E3_E4_E6.csv`](results/30epochs/summary_E3_E4_E6.csv).
+- Gói input Kaggle mới: [`results_e6_30epochs_eval.zip`](results_zips/results_e6_30epochs_eval.zip). Kết quả đánh giá mới nhất: `results_zips/results_valid_e6_30.zip`.
+- Các ZIP kết quả nguồn được gom trong [`results_zips/`](results_zips/); kết quả đã nhập cho hệ thống vẫn ở [`results/30epochs/`](results/30epochs/).
 - [`app/`](app/) có ứng dụng Gradio upload ảnh với E3, E4 hoặc E6. Việc chọn **một mô hình triển khai cuối** cho báo cáo nghiên cứu vẫn phải dựa trên đánh giá VALID chung và benchmark cùng phần cứng; dropdown demo hiện cho phép xem cả ba.
 
 ## Chạy ứng dụng trên Windows
 
-Trong PowerShell:
+Trên máy đã chuẩn bị dataset và checkpoint, trong PowerShell:
 
 ```powershell
-Set-Location -LiteralPath 'D:\Downloads\kỳ 7\dl\btl'
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe -m app.main
 ```
 
-Mở `http://127.0.0.1:7860`, tải ảnh JPG/JPEG/PNG, chọn YOLO11n, YOLO11s hoặc Faster R-CNN và bấm **Phát hiện vật cản**. Ứng dụng tự lấy ngưỡng theo mô hình từ [Auto Confidence](app/confidence_config.json); người dùng không phải chỉnh threshold. Ứng dụng hiển thị ảnh có bbox, tên lớp, confidence, số lượng, thời gian suy luận, **thời gian xử lý yêu cầu trên máy chủ** và file PNG để tải. Thời gian xử lý máy chủ gồm kiểm ảnh, suy luận, vẽ bbox, lưu PNG và tạo văn bản; không gồm upload/truyền tải hoặc trình duyệt render. Nhấn `Ctrl+C` ở PowerShell để dừng. Nếu máy không có CUDA, ứng dụng tự dùng CPU.
+Mở `http://127.0.0.1:7860`, tải ảnh JPG/JPEG/PNG, chọn mô hình và bấm **Phát hiện vật cản**. Chế độ mặc định dùng ngưỡng đã chọn trên VALID; chọn **Tự chỉnh** để dùng thanh confidence 0,01–0,99. Tùy chọn **High recall — quét đa vùng** phóng lớn các vùng chồng lấn để tìm vật thể nhỏ/xa rồi khử box trùng; chế độ này chậm hơn và có thể tăng báo nhầm. Ứng dụng hiển thị ảnh có bbox, tên lớp, confidence, số lượng, ngưỡng và kiểu quét thực dùng. Nhấn `Ctrl+C` ở PowerShell để dừng.
 
-Ứng dụng đọc trực tiếp checkpoint fine-tuned E3, E4 và E6 ở các đường dẫn trên, đều kiểm SHA256. Adapter E6 dùng Faster R-CNN V2 với 26 lớp gồm background và ánh xạ về ROD 0–24. Ảnh kết quả ở `app/outputs/`. [Báo cáo kiểm thử ứng dụng](docs/reports/APP_TEST_REPORT.md).
+Ứng dụng đọc trực tiếp checkpoint fine-tuned E3, E4 và E6 ở các đường dẫn trên, đều kiểm SHA256. Adapter E6 dùng Faster R-CNN V2 với 26 lớp gồm background và ánh xạ về ROD 0–24. Ảnh kết quả ở `app/outputs/`.
 
-**Auto Confidence:** phần trăm trên bbox là confidence do mô hình dự đoán; ngưỡng là mức lọc prediction; chế độ tự động đọc ngưỡng riêng theo model từ [cấu hình](app/confidence_config.json). E3/E4/E6 có ngưỡng vận hành lần lượt 0,22/0,19/0,59, được chọn trên toàn bộ VALID bằng F2. Ngưỡng không thay đổi theo từng ảnh và không dùng TEST. Confidence hiển thị không phải xác suất đã hiệu chuẩn.
+**Phân vùng theo vị trí (prototype):** sau khi mô hình dự đoán, mỗi bbox được gán vào **Dưới chân / Trước mặt / Ở xa** theo vị trí đáy và tâm ngang của bbox trong ảnh (ngưỡng 70%/40% chiều cao, khai báo tại `ZONE_*` trong `app/detector.py`). Đây là heuristic đặt tay, giả định ảnh chụp từ góc nhìn người đi bộ và **chưa được kiểm chứng**: nó không ước lượng khoảng cách, không xác định vật thể có thực sự cản lối đi, và không thay đổi bbox, confidence hay bất kỳ số liệu VALID/TEST nào của E3/E4/E6. Giao diện có tuỳ chọn tắt tô màu theo vùng (xem đúng đầu ra mô hình) và ẩn phát hiện vùng Ở xa. Kiểm chứng quy tắc này (đánh giá theo vùng, hoặc gán nhãn thủ công “có cản lối đi”) thuộc hướng phát triển.
 
-Xem [báo cáo Auto Confidence](docs/reports/AUTO_CONFIDENCE_REPORT.md) để biết ngưỡng, Precision/Recall và giới hạn của ảnh cầu thang người dùng nêu.
+**Auto Confidence:** phần trăm trên bbox là confidence do mô hình dự đoán; ngưỡng là mức lọc prediction; chế độ tự động đọc ngưỡng riêng theo model từ [cấu hình](app/confidence_config.json). E3/E4/E6 có ngưỡng VALID lần lượt 0,27/0,24/0,60. Ngưỡng E6 được chọn trên VALID của checkpoint hiện hành. Ngưỡng không thay đổi theo từng ảnh và không dùng TEST. Confidence hiển thị không phải xác suất đã hiệu chuẩn.
+
+Cấu hình ngưỡng nằm trong `app/confidence_config.json`; bằng chứng hiệu chuẩn và đánh giá E6 hiện hành ở `results/30epochs/E6/`. `results/E6_Faster_RCNN/confidence/` là bằng chứng của checkpoint E6 cũ.
 
 ## Đánh giá thống nhất
 
@@ -59,18 +71,19 @@ Ba mô hình được đánh giá trên cùng VALID bằng `app/evaluator.py`: g
 .\.venv\Scripts\python.exe -m app.evaluate_models --freeze
 ```
 
-Lượt `calibrate_e6` lưu cache sau từng ảnh và tiếp tục được nếu bị ngắt; chỉ dùng 3.318 ảnh VALID. Benchmark đo tuần tự batch 1 trên cùng thiết bị; số FPS CPU không đại diện cho Kaggle GPU. Benchmark `--scope server` đo callback Gradio trên 30 ảnh VALID sau warmup, lưu riêng lượt đầu và thời gian trung bình/p95 tại `results/E*/metrics/server_latency_benchmark.json`. Nó chưa đo độ trễ mạng hoặc trình duyệt. Ba VALID đã PASS và `--freeze` đã tạo [evaluation_lock.json](app/evaluation_lock.json); lệnh này chỉ chạy một lần, lần chạy lại sẽ từ chối ghi đè. Lệnh TEST ở `app/evaluate_test.py` chỉ được chạy sau khi cho phép đánh giá cuối, với `--confirm-locked-test`; **chưa chạy TEST** trong giai đoạn chuẩn bị này. Báo cáo đồ án dạng LaTeX: [BAO_CAO_PHAT_HIEN_VAT_CAN.tex](docs/reports/BAO_CAO_PHAT_HIEN_VAT_CAN.tex).
+Lượt `calibrate_e6` chỉ dùng 3.318 ảnh VALID. Benchmark đo tuần tự batch 1 trên cùng thiết bị; số FPS CPU không đại diện cho Kaggle GPU. Benchmark `--scope server` đo callback Gradio, chưa đo độ trễ mạng hoặc trình duyệt. Các lệnh trên là quy trình đánh giá local; bộ kết quả hiện hành được nhập từ Kaggle, có khóa VALID riêng cho từng mô hình. [evaluation_lock.json](app/evaluation_lock.json) là chỉ mục local của các khóa gốc. Xem [bảng tổng hợp](results/30epochs/summary_E3_E4_E6.csv) và `results/30epochs/{E3,E4,E6}/test/` cho kết quả TEST hiện hành. Báo cáo: [NguyenTranKien.pdf](NguyenTranKien.pdf). Bản Word: [ACL_Paper.docx](ACL_Paper.docx). Slide: [Slide_BaoCao.pptx](Slide_BaoCao.pptx).
 
 ## Cấu trúc
 
-`configs/` cấu hình hiện hành; `notebooks/` giữ ba notebook E3/E4/E6; `src/` logic và công cụ còn cần để tái lập; `app/` ứng dụng; `docs/` kế hoạch hiện hành, hướng dẫn và báo cáo; `results/` bằng chứng và kết quả; `artifacts/` gói dữ liệu; `tests/` kiểm thử. ZIP nguồn E3 nằm trong `archive/`. Workflow Scratch, Stage C cũ, Smoke Test và inventory cũ đã được sao lưu ngoài project; xem [báo cáo cleanup cuối](docs/reports/FINAL_PROJECT_CLEANUP.md).
+`configs/` cấu hình hiện hành; `notebooks/` giữ ba notebook E3/E4/E6; `src/` logic và công cụ còn cần để tái lập; `app/` ứng dụng; `docs/` kế hoạch hiện hành và hướng dẫn; `results/` bằng chứng và kết quả; `artifacts/` gói dữ liệu; `tests/` kiểm thử. ZIP nguồn E3 nằm trong `archive/`. Workflow Scratch, Stage C cũ, Smoke Test và inventory cũ đã được sao lưu ngoài project.
 
 ```text
 results/
+├─ 30epochs/          Kết quả hiện hành E3/E4/E6; GitHub lưu metrics và cache dự đoán
 ├─ lam_sach_du_lieu/  Báo cáo, ảnh review, manifest V2/V3/V4/Final và audit Day 1/2
 ├─ E3_YOLO11n/        weights/, metrics/, logs/ và calibration VALID
 ├─ E4_YOLO11s/        checkpoints/, metrics/, logs/ và calibration VALID
-└─ E6_Faster_RCNN/    Checkpoint E6; metrics/config/manifest rời còn thiếu
+└─ E6_Faster_RCNN/    Artifact E6 cũ, chỉ giữ local để truy vết
 ```
 
 `results/day2/` đã được đổi tên trực tiếp thành `results/lam_sach_du_lieu/`; các manifest CSV/JSON gốc ghi đường dẫn cũ được giữ nguyên để bảo toàn bằng chứng. Code đọc ảnh review chấp nhận cả đường dẫn Windows/Unix cũ. Snapshot môi trường Day 1 ở `archive/day1_environment/environment.json`, có ZIP backup và manifest SHA256 tại `archive/day1_environment_backup.zip`. Nguồn E3 `results11.zip`, các artifact và tài liệu Smoke Test nằm ở `archive/e3_kaggle_evidence/`; thư mục `results11/` giải nén đã được loại sau khi đối chiếu SHA256.

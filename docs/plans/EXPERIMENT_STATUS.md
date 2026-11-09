@@ -1,4 +1,10 @@
+> Trạng thái hiện hành 28/10/2026: E3/E4/E6 đã hoàn tất run 30 epoch và có đủ VALID/TEST. E6 mới từ `results_valid_e6_30.zip`, threshold 0,60, TEST mAP50–95 0,677107. Xem `results/30epochs/VERIFIED_RESULTS.md`. Các phần kế hoạch và mốc cũ bên dưới giữ để truy vết lịch sử.
+
 # EXPERIMENT STATUS
+
+## Mở rộng được duyệt 2026-10-17
+
+Người dùng yêu cầu E3/E4/E6 đến 30 epoch, giữ các mốc 10/20/30. Trạng thái cả ba **PREPARED, 10/30**, chưa chạy epoch 11. Recovery local E3/E4 raw epoch=9, optimizer còn, lịch 30; E6 completed_epoch=10, offset=0, scheduler.last_epoch=10, LR=0,000005. Notebook mới `notebooks/Kaggle_E{3,4,6}_30epochs_AutoResume.ipynb`; xem [hướng dẫn](../kaggle/TRAIN_30_EPOCHS.md). Không dùng TEST để điều chỉnh phần mở rộng; kết quả baseline 10 và lịch sử bên dưới được giữ nguyên. Kiểm thử CPU không thay cho GPU integration.
 
 Ngày đối chiếu: 2026-10-11. Chỉ trạng thái có file/log/checksum mới được ghi `COMPLETED` hoặc `VERIFIED`. E6 có checkpoint local ghi 10 epoch; chưa đối chiếu đầy đủ artifact/manifest Kaggle hoặc HF.
 

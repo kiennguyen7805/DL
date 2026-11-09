@@ -9,8 +9,8 @@ from pathlib import Path
 
 CONFIG_PATH = Path(__file__).with_name("confidence_config.json")
 MODEL_IDS = {
-    "YOLO11n (E3)": "E3",
-    "YOLO11s (E4)": "E4",
+    "YOLO11n (E3, 30 epoch)": "E3",
+    "YOLO11s (E4, 30 epoch)": "E4",
     "Faster R-CNN (E6)": "E6",
 }
 

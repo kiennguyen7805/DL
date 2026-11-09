@@ -1,0 +1,13 @@
+{
+  "model": "E6",
+  "checkpoint_sha256": "a75beb6e3d8629bf9066bc8a03a0b44de93a720aa3d7b3663f0641b732ae8a8f",
+  "data_yaml_sha256": "84a776e32c59063930b3e036d91876921163f48de70a9e85eb8c2b3cc2ddcf52",
+  "completed_epoch": 30,
+  "target_epochs": 30,
+  "training_complete": true,
+  "threshold": 0.6,
+  "threshold_selection": "VALID micro-F2; ties precision then threshold",
+  "valid_prediction_sha256": "bc0bb53a1090f38728d51dad16380afd33ae1cdad6810b6ab84d34ad882136af",
+  "valid_metrics_sha256": "3a8f64b92e356f275722e0270925d41fe1b87ca544dbd0befa720d3c120e5407",
+  "threshold_sweep_sha256": "338d16820c008f23b0533e21462c509fbf6ccc73ab05ac7db2d11f108ab9adce"
+}

@@ -1,0 +1,18 @@
+{
+  "model": "E6",
+  "split": "valid",
+  "images": 3318,
+  "checkpoint_sha256": "a75beb6e3d8629bf9066bc8a03a0b44de93a720aa3d7b3663f0641b732ae8a8f",
+  "data_yaml_sha256": "84a776e32c59063930b3e036d91876921163f48de70a9e85eb8c2b3cc2ddcf52",
+  "device": "Tesla T4",
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128",
+  "inference": {
+    "conf": 0.01,
+    "iou": 0.7,
+    "max_det": 300,
+    "batch_size": 2,
+    "min_size": 640,
+    "max_size": 960
+  }
+}

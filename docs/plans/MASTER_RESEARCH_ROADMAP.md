@@ -1,4 +1,8 @@
+> Trạng thái hiện hành 28/10/2026: E3/E4/E6 đã hoàn tất run 30 epoch và có đủ VALID/TEST. E6 mới từ `results_valid_e6_30.zip`, threshold 0,60, TEST mAP50–95 0,677107. Xem `results/30epochs/VERIFIED_RESULTS.md`. Các phần kế hoạch và mốc cũ bên dưới giữ để truy vết lịch sử.
+
 # Master research roadmap — phạm vi hiện hành
+
+> Quyết định 2026-10-17: người dùng duyệt mở rộng cả E3/E4/E6 từ checkpoint 10 đến 30 epoch, giữ mốc 10/20/30. Trạng thái PREPARED, chưa chạy GPU. Xem [hướng dẫn mới](../kaggle/TRAIN_30_EPOCHS.md). Giữ baseline 10, TEST và calibration cũ; ngân sách 10 phía dưới mô tả baseline. E6 giữ StepLR gốc, không tự reset LR. Không dùng TEST để chọn cấu hình mở rộng.
 
 **Đề tài:** Phát hiện vật cản trong ảnh hướng tới hỗ trợ di chuyển cho người khiếm thị.
 
